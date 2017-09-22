@@ -7,7 +7,7 @@
 public class BrandNewRectangle {
 
     public void drawBrandNewRectangle(int x1, int y1, int x2, int y2) {
-        System.out.println("Draw brand new rectangle with special effects!");
+        System.out.println("Drawing brand new rectangle with special effects!");
         System.out.println(String.format(
                 "Drawing rectangle: " +
                         "x1: %s, " +

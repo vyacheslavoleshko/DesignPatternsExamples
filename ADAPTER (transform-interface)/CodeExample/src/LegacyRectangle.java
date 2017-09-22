@@ -6,8 +6,8 @@
  */
 public class LegacyRectangle implements Rectangle {
     public void drawOldRectangle(int upperLeftX, int upperLeftY, int width, int height) {
+        System.out.println("Drawing old boring rectangle!");
         System.out.println(String.format(
-                "Drawing old boring rectangle: " +
                 "left corner X: %s, " +
                 "left corner Y: %s, " +
                 "width: %s, " +
