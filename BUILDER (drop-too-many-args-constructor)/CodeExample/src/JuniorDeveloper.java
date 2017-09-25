@@ -7,7 +7,7 @@ import java.math.BigInteger;
  * <p>
  * Using this pattern is recommended when number of arguments >= 4
  *
- * NOTE: use Lombock @Builder annotation if you are coll hacker ;)
+ * NOTE: use Lombock @Builder annotation if you are cool hacker ;)
  *
  * @author Viacheslav Oleshko
  */
@@ -65,7 +65,7 @@ public class JuniorDeveloper {
         JuniorDeveloper jun = new JuniorDeveloper
                 .builder("Junior", (byte) 100500)
                 .setStupidity(new BigInteger("100500"))
-                .setNumberOfBooksRead((byte)2)
+                .setNumberOfBooksRead((byte)6)
                 .setAwesomeness(42.0)
                 .build();
 

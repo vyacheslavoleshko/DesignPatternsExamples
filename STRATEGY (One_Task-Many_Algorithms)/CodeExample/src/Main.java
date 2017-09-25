@@ -8,9 +8,9 @@ public class Main {
         Strategy rarStrategy = new RarStrategy();
 
         archiver.setStrategy(zipStrategy);
-        archiver.archive("C://1.txt");
+        archiver.archive("C://1.txt");  // Creating ZIP archive for file C://1.txt
 
         archiver.setStrategy(rarStrategy);
-        archiver.archive("C://2.txt");
+        archiver.archive("C://2.txt");  // Creating RAR archive for file C://2.txt
     }
 }

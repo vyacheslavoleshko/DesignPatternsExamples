@@ -7,6 +7,6 @@ public class ZipStrategy implements Strategy{
     @Override
     public void archive(String filePath) {
         System.out.println(String.format(
-                "Creating ZIP archive %s for file ", filePath));
+                "Creating ZIP archive for file %s", filePath));
     }
 }
