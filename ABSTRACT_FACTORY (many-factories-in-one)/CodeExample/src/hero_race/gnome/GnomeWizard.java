@@ -10,4 +10,9 @@ public class GnomeWizard implements Wizard {
     public void cast() {
         System.out.println("Casting using Gnome Magic");
     }
+
+    @Override
+    public String toString() {
+        return "I'm GnomeWizard";
+    }
 }

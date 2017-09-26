@@ -10,4 +10,9 @@ public class ElfWizard implements Wizard {
     public void cast() {
         System.out.println("Casting using Elf Magic");
     }
+
+    @Override
+    public String toString() {
+        return "I'm ElfWizard";
+    }
 }

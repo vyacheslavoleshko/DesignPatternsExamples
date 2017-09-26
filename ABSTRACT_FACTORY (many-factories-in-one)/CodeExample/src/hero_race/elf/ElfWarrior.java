@@ -10,4 +10,9 @@ public class ElfWarrior implements Warrior {
     public void smash() {
         System.out.println("Attack using Elf Sword");
     }
+
+    @Override
+    public String toString() {
+        return "I'm ElfWarrior";
+    }
 }

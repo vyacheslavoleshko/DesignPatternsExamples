@@ -10,4 +10,9 @@ public class ElfArcher implements Archer {
     public void shoot() {
         System.out.println("Shoot from Elf Bow");
     }
+
+    @Override
+    public String toString() {
+        return "I'm ElfArcher";
+    }
 }

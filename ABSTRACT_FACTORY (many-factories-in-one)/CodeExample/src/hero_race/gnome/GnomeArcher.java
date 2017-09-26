@@ -10,4 +10,9 @@ public class GnomeArcher implements Archer {
     public void shoot() {
         System.out.println("Shoot from Gnome Bow");
     }
+
+    @Override
+    public String toString() {
+        return "I'm GnomeArcher";
+    }
 }
