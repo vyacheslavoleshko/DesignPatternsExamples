@@ -12,7 +12,6 @@ public class Folder implements Data {
     private String folderName;
     private List<Data> dataList;
 
-
     public Folder(String folderName) {
         this.folderName = folderName;
         dataList = new ArrayList<>();

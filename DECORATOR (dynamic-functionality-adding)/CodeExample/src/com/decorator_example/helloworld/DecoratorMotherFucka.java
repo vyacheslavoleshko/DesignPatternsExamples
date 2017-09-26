@@ -13,8 +13,6 @@ public class DecoratorMotherFucka extends CatDecorator{
         super(innerCat);
     }
 
-
-
     @Override
     public void doCatActions() {
         System.out.print(" motherfucka!");

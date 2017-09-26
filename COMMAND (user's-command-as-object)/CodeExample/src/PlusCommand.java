@@ -2,19 +2,19 @@
  * @author Viacheslav Oleshko
  */
 public class PlusCommand implements Command{
-    private ArithmeticCalculationPerformer calculator;
+    private Receiver receiver;
     private int a;
     private int b;
 
-    public PlusCommand(ArithmeticCalculationPerformer calculator, int a, int b) {
-        this.calculator = calculator;
+    public PlusCommand(Receiver rec, int a, int b) {
+        this.receiver = rec;
         this.a = a;
         this.b = b;
     }
 
     @Override
     public void execute() {
-        calculator.getSum(a, b);
+        receiver.getSum(a, b);
     }
 }
 

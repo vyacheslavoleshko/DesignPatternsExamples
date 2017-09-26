@@ -2,16 +2,16 @@
  * @author Viacheslav Oleshko
  */
 public class SquareCommand implements Command {
-    private ArithmeticCalculationPerformer calculator;
+    private Receiver receiver;
     private int a;
 
-    public SquareCommand(ArithmeticCalculationPerformer calculator, int a) {
-        this.calculator = calculator;
+    public SquareCommand(Receiver calculator, int a) {
+        this.receiver = calculator;
         this.a = a;
     }
 
     @Override
     public void execute() {
-        calculator.getSquare(a);
+        receiver.getSquare(a);
     }
 }
