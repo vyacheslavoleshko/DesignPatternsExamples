@@ -1,5 +1,7 @@
 import util.SpaceAdder;
 
+import java.util.List;
+
 /**
  * Leaf element
  *
@@ -16,5 +18,20 @@ public class File implements Data {
     @Override
     public void display() {
         System.out.println(SpaceAdder.spaces + fileName);
+    }
+
+    @Override
+    public void add(Data data) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void remove(Data data) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public List<Data> getChilds() {
+        throw new UnsupportedOperationException();
     }
 }

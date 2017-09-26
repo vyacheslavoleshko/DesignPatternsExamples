@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class Folder implements Data {
     private String folderName;
-    private List<Data> dataList;
+    private List<Data> dataList;  // List of child elements
 
     public Folder(String folderName) {
         this.folderName = folderName;

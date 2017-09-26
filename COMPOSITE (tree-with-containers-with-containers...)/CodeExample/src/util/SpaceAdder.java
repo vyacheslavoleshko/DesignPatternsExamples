@@ -13,7 +13,7 @@ public class SpaceAdder {
 
     public static void addSpaces() {
         for (int i = 0; i < NUMBER_OF_SPACES; i++) {
-            spaces.append(" ");
+            spaces.append(".");
         }
     }
 
