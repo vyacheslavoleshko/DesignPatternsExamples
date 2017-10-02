@@ -18,19 +18,24 @@ public class JuniorDeveloper {
     private byte numberOfBooksRead;
     private Double awesomeness;
 
+    // Inner class to build the object
     public static class builder {
-        // mandatory parameters
-        private String name;
-        private byte brainVolume;
+        // Set default values
+        private String      name = "";
+        private byte        brainVolume = 0;
+        private BigInteger  stupidity = new BigInteger("100500");
+        private byte        numberOfBooksRead = 0;
+        private Double      awesomeness = -1.0;
 
-        // optional parameters
-        private BigInteger stupidity = new BigInteger("0");
-        private byte numberOfBooksRead = 0;
-        private Double awesomeness = -1.0;  // default value
-
-        public builder(String name, byte brainVolume) {
+        // Setters for all fields
+        public builder setName(String name) {
             this.name = name;
+            return this;
+        }
+
+        public builder setBrainVolume(byte brainVolume) {
             this.brainVolume = brainVolume;
+            return this;
         }
 
         public builder setStupidity(BigInteger stupidity) {
@@ -48,11 +53,13 @@ public class JuniorDeveloper {
             return this;
         }
 
+        // This method of builder instantiates JuniorDeveloper objects
         public JuniorDeveloper build() {
             return new JuniorDeveloper(this);
         }
     }
 
+    // Private constructor of JuniorDeveloper class. builder#build() uses this constructor
     private JuniorDeveloper(builder builder) {
         this.name = builder.name;
         this.brainVolume = builder.brainVolume;
@@ -61,19 +68,32 @@ public class JuniorDeveloper {
         this.awesomeness = builder.awesomeness;
     }
 
+    @Override
+    public String toString() {
+        return "JuniorDeveloper{" +
+                "name='" + name + '\'' +
+                ", brainVolume=" + brainVolume +
+                ", stupidity=" + stupidity +
+                ", numberOfBooksRead=" + numberOfBooksRead +
+                ", awesomeness=" + awesomeness +
+                '}';
+    }
+
     public static void main(String[] args) {
-        JuniorDeveloper jun = new JuniorDeveloper
-                .builder("Junior", (byte) 100500)
+        JuniorDeveloper unnamedJun = new JuniorDeveloper
+                .builder()
+                .build();
+
+        JuniorDeveloper juniorDeveloper = new JuniorDeveloper
+                .builder()
+                .setName("Junior")
+                .setBrainVolume((byte)1)
                 .setStupidity(new BigInteger("100500"))
                 .setNumberOfBooksRead((byte)6)
                 .setAwesomeness(42.0)
                 .build();
 
-        System.out.println(jun.name);
-        System.out.println(jun.brainVolume);
-        System.out.println(jun.stupidity);
-        System.out.println(jun.numberOfBooksRead);
-        System.out.println(jun.awesomeness);
-
+        System.out.println(unnamedJun);
+        System.out.println(juniorDeveloper);
     }
 }
