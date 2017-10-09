@@ -4,7 +4,7 @@
 public class ErrorLogger extends AbstractLogger {
 
     public ErrorLogger(SeverityLevel level) {
-        this.severityLevel = level;
+        super(level);
     }
 
     @Override

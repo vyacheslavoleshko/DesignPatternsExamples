@@ -6,25 +6,25 @@
 
 public class _Main {
     public static void main(String[] args) {
-        Originator forumMessage = new Originator();
+        ForumMessage forumMessage = new ForumMessage();
         CareTaker careTaker = new CareTaker();
 
-        forumMessage.setState("State_1");
-        forumMessage.setState("State_2");
+        forumMessage.setMsg("State_1");
+        forumMessage.setMsg("State_2");
 
         careTaker.addMemento(forumMessage.save());
 
-        forumMessage.setState("State_3");
+        forumMessage.setMsg("State_3");
 
         careTaker.addMemento(forumMessage.save());
 
-        forumMessage.setState("State_4");
+        forumMessage.setMsg("State_4");
         forumMessage.restore(careTaker.getMemento());
 
-        System.out.println("Current state:" + forumMessage.getState());
+        System.out.println("Current state:" + forumMessage.getMsg());
 
         forumMessage.restore(careTaker.getMemento());
 
-        System.out.println("Current state:" + forumMessage.getState());
+        System.out.println("Current state:" + forumMessage.getMsg());
     }
 }

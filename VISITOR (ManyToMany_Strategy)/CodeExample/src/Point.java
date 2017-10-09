@@ -15,5 +15,4 @@ public abstract class Point {
     }
 
     public abstract void accept(GeometryCalculator calculator);
-
 }

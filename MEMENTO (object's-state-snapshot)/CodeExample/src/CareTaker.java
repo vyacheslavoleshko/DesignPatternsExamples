@@ -6,15 +6,15 @@ import java.util.Stack;
  * @author Viacheslav Oleshko
  */
 public class CareTaker {
-    private Stack<Memento> memntos = new Stack<>();
+    private Stack<Memento> mementos = new Stack<>();
 
     public void addMemento(Memento memento) {
         System.out.println("CareTaker: adding Memento");
-        memntos.push(memento);
+        mementos.push(memento);
     }
 
     public Memento getMemento() {
         System.out.println("CareTaker: retrieving Memento");
-       return memntos.pop();
+       return mementos.pop();
     }
 }

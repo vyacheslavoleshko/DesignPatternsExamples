@@ -88,7 +88,7 @@ public class JuniorDeveloper {
                 .builder()
                 .setName("Junior")
                 .setBrainVolume((byte)1)
-                .setStupidity(new BigInteger("100500"))
+                .setStupidity(new BigInteger("0"))
                 .setNumberOfBooksRead((byte)6)
                 .setAwesomeness(42.0)
                 .build();

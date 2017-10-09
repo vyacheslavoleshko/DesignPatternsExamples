@@ -5,6 +5,10 @@ public abstract class AbstractLogger {
     private AbstractLogger nextLoggerInChain;
     protected SeverityLevel severityLevel;
 
+    public AbstractLogger(SeverityLevel severityLevel) {
+        this.severityLevel = severityLevel;
+    }
+
     public AbstractLogger linkWith(AbstractLogger nextLoggerInChain) {
         this.nextLoggerInChain = nextLoggerInChain;
         return nextLoggerInChain;

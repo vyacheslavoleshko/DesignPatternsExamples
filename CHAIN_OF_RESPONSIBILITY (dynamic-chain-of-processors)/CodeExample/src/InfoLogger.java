@@ -4,7 +4,7 @@
 public class InfoLogger extends AbstractLogger {
 
     public InfoLogger(SeverityLevel level) {
-        this.severityLevel = level;
+        super(level);
     }
 
     @Override

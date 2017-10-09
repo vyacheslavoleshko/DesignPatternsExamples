@@ -21,5 +21,4 @@ public class Main {
         chainOfLoggers.logMessage(SeverityLevel.DEBUG, "Debug Message");
         chainOfLoggers.logMessage(SeverityLevel.ERROR, "Error Message");
     }
-
 }
