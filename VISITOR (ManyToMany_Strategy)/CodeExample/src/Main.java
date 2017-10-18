@@ -12,7 +12,7 @@ public class Main {
         point2D.accept(euclidCalculator);
         System.out.println(point2D.getMetrics());
 
-        point3D.accept(new EuclidCalculator());
+        point3D.accept(euclidCalculator);
         System.out.println(point3D.getMetrics());
 
 
